@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="m-0">
+     <!-- offer -->
+  <nav class="flex justify-center items-center gap-5 bg-black text-white h-10 sm:h-6 md:h-12 " id="topPath">
+    <p class="font-bold md:text-xl">Sign Up and <span class="text-red-500">GET 20% OFF </span>for your first Order </p>
+    <p class="font-bold md:text-xl cursor-pointer" id="topClose">x</p>
+  </nav>
+  <!-- navbar -->
+  <nav class="flex justify-between px-5 pt-2  sticky top-0 z-30 h-10 bg-white">
+    <h1 class="text-2xl font-bold">Nostra</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+      class=" lg:hidden size-6 cursor-pointer" id="menubar">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+    <!-- inside menubar -->
+    <div class="hidden lg:flex gap-20 font-normal">
+      <p><a href="index.html">Home</a></p>
+      <p>New Arrival</p>
+      <p>Most Wanted</p>
+      <p><a href="collection.html">Collections</a></p>
+      <p><a href="contact.html">Contact us</a></p>
+    </div>
+  </nav>
+  <!-- sidenavbar -->
+   <nav class="bg-black fixed z-40 top-0 pt-1 " style="width: 50%; height:100vh; left:-50%;" id="sidenav">
+    <div>
+        <p class="text-white flex justify-end mr-10 cursor-pointer" id="menuclose">X</p>
+    </div>
+   <div class="flex flex-col text-white pl-20 gap-10"> <p><a href="index.html">Home</a></p>
+      <p>New Arrival</p>
+      <p>Most Wanted</p>
+      <p><a href="collection.html">Collections</a></p>
+      <p><a href="contact.html">Contact us</a></p></div>
+     
+   </nav>
+    
+   <div class="min-h-screen bg-slate-200 py-6 flex flex-col justify-center sm:py-12">
+    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div
+            class="absolute inset-0  bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+        </div>
+        <div class="text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20">
+
+            <div class="text-center pb-6">
+                <h1 class="text-3xl">Contact Us!</h1>
+
+                <p class="text-gray-300">
+                    Fill up the form below to send us a message.
+                </p>
+            </div>
+
+            <form>
+
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Name" name="name">
+
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="email" placeholder="Email" name="email">
+
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Subject" name="_subject">
+
+                <textarea
+                        class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Type your message here..." name="message" style="height: 121px;"></textarea>
+
+                <div class="flex justify-between">
+                    <input
+                        class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="submit" value="Send ➤">
+                    <input
+                        class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="reset">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--footer  -->
+<nav class="bg-gray-800 ">
+    <div class="text-white m-4 p-4">
+      <p style="font-size: 3vw;font-weight: bold;">Nostra</p>
+      <p style="font-size:2vw;">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those
+        interest
+      </p>
+      <div class="flex gap-20 mt-5 mb-3">
+        <i class="fa-brands fa-instagram" style="color: #eef1f6;"></i>
+        <i class="fa-brands fa-twitter" style="color: #f2f4f8;"></i>
+        <i class="fa-brands fa-facebook" style="color: #dfe4ec;"></i>
+      </div>
+      <p class="mb-3" style="font-size:2vw;">@ 2024 Nostra.com </p>
+    </div>
+  </nav>
+  <script src="index.js"></script>
+
+</body>
+</html>

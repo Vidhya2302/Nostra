@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra vidhya collection</title> <!--https:errormakesclever.github.io/Nostra-Ecommerce-Js/index.html -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- style -->
+  <style>
+    .container {
+      width: 100%;
+      display: flex;
+    }
+
+    /* sidebar */
+    .sidebar {
+      width: 25%;
+      padding: 20px;
+      font-size: 2.5vw;
+      position: relative;
+    }
+
+    .vertical-line {
+      border: 1px solid black;
+      height: 100%;
+      margin: 15px;
+      position: absolute;
+      top: 0%;
+      right: 0%;
+    }
+
+    /* collections */
+    .collections-grid {
+      width: 80%;
+    }
+
+    .collections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+      gap: 20px;
+      font-size: 2vw;
+      font-weight: bold;
+    }
+
+    .collection-one img {
+      width: 80%;
+    }
+  </style>
+</head>
+
+<body class="m-0">
+  <!-- offer -->
+  <nav class="flex justify-center items-center gap-5 bg-black text-white h-10 sm:h-6 md:h-12 " id="topPath">
+    <p class="font-bold md:text-xl">Sign Up and <span class="text-red-500">GET 20% OFF </span>for your first Order </p>
+    <p class="font-bold md:text-xl cursor-pointer" id="topClose">x</p>
+  </nav>
+  <!-- navbar -->
+  <nav class="flex justify-between px-5 pt-2  sticky top-0 z-30 h-10 bg-white">
+    <h1 class="text-2xl font-bold">Nostra</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+      class=" lg:hidden size-6 cursor-pointer" id="menubar">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+    <!-- inside menubar -->
+    <div class="hidden lg:flex gap-20 font-normal">
+      <p><a href="index.html">Home</a></p>
+      <p>New Arrival</p>
+      <p>Most Wanted</p>
+      <p><a href="collection.html">Collections</a></p>
+      <p><a href="contact.html">Contact us</a></p>
+    </div>
+  </nav>
+  <!-- sidenavbar -->
+   <nav class="bg-black fixed z-40 top-0 pt-1 " style="width: 50%; height:100vh; left:-50%;" id="sidenav">
+    <div>
+        <p class="text-white flex justify-end mr-10 cursor-pointer" id="menuclose">X</p>
+    </div>
+   <div class="flex flex-col text-white pl-20 gap-10"> <p><a href="index.html">Home</a></p>
+      <p>New Arrival</p>
+      <p>Most Wanted</p>
+      <p><a href="collection.html">Collections</a></p>
+      <p><a href="contact.html">Contact us</a></p></div>
+     
+   </nav>
+  <!-- collections -->
+  <nav class="container">
+    <div class="sidebar">
+      <div>
+        <h1 class="font-bold mb-3">Occasion</h1>
+        <p><input type="checkbox" value="Summer"> Summer</p>
+        <p><input type="checkbox" value="Party"> Party</p>
+        <p><input type="checkbox" value="Beach"> Beach</p>
+      </div>
+      <div>
+        <h1 class="font-bold mb-3 mt-3">Colors</h1>
+        <p><input type="checkbox" value="Summer"> Red</p>
+        <p><input type="checkbox" value="Party"> Green</p>
+        <p><input type="checkbox" value="Beach"> Blue</p>
+        <p><input type="checkbox" value="Beach"> White</p>
+      </div>
+      <div>
+        <h1 class="font-bold mb-3 mt-3">Party</h1>
+        <p><input type="checkbox" value="Summer"> New</p>
+        <p><input type="checkbox" value="Party"> Old</p>
+      </div>
+      <hr class="vertical-line">
+    </div>
+
+    <!-- collections -->
+    <div class="collections-grid">
+
+      <div class="searchbar">
+
+        <input type="text" placeholder="search" class="border border-black p-2 rounded-2xl ml-10" style="width: 90%;">
+        <!-- 
+        <input type="text" placeholder="search">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg> -->
+      </div>
+      <div class="collections mt-5">
+        <div class="collection-one">
+          <img src="./shirt1.jpg">
+          <p>Floral Summer Shirt</p>
+          <p class="font-semibold text-lg">₹ 260</p>
+        </div>
+        <div class="collection-one">
+          <img src="./shirt2.jpg">
+          <p>Summer Green</p>
+          <p class="font-semibold text-lg">₹ 226</p>
+        </div>
+        <div class="collection-one">
+          <img src="./shirt3.jpg">
+          <p>Party Floral Shirt</p>
+          <p class="font-semibold text-lg">₹ 380</p>
+        </div>
+      </div>
+      <div class="collections mt-5">
+        <div class="collection-one">
+          <img src="./shirt4.jpg">
+          <p>Floral Summer Shirt</p>
+          <p class="font-semibold text-lg">₹ 260</p>
+        </div>
+        <div class="collection-one">
+          <img src="./shirt5.jpg">
+          <p>Beach Shirt</p>
+          <p class="font-semibold text-lg">₹ 399</p>
+        </div>
+        <div class="collection-one">
+          <img src="./shirt6.jpg">
+          <p>Shirt Party Red</p>
+          <p class="font-semibold text-lg">₹ 475</p>
+        </div>
+      </div>
+      <div class="collections mt-5">
+        <div class="collection-one">
+          <img src="./shirt7.jpg">
+          <p>Floral Summer Shirt</p>
+          <p class="font-semibold text-lg">₹ 340</p>
+        </div>
+        <div class="collection-one">
+          <img src="./shirt8.jpg">
+          <p> Party Floral Shirt</p>
+          <p class="font-semibold text-lg">₹ 560</p>
+        </div>
+        <div class="collection-one">
+          <img src="./shirt2.jpg">
+          <p>Shirt Party Red</p>
+          <p class="font-semibold text-lg">₹ 390</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- join our news letter -->
+  <nav class="m-4 mb-6 mt-10">
+    <div class="text-center">
+      <p class="font-bold " style="font-size: 3vw;">Join our News Letter</p>
+      <p style="font-size: 2vw;">Signup for our email newspaper to get exclusive discounts, updates, and more
+      </p>
+      <input style="border:solid black; width:400px; height: 40px; margin-top: 10px;" type="text"><br>
+
+      <button class="bg-black text-white rounded-xl h-8 w-28 m-4"> Subscribe &rarr;
+      </button>
+
+
+    </div>
+
+    <!--footer  -->
+    <nav class="bg-gray-800 m-0">
+      <div class="text-white m-4 p-4">
+        <p style="font-size: 3vw;font-weight: bold;">Nostra</p>
+        <p style="font-size:2vw;">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those
+          interest
+        </p>
+        <div class="flex gap-20 mt-5 mb-3">
+          <i class="fa-brands fa-instagram" style="color: #eef1f6;"></i>
+          <i class="fa-brands fa-twitter" style="color: #f2f4f8;"></i>
+          <i class="fa-brands fa-facebook" style="color: #dfe4ec;"></i>
+        </div>
+        <p class="mb-3" style="font-size:2vw;">@ 2024 Nostra.com </p>
+      </div>
+    </nav>
+<script src="index.js"></script>
+</body>
